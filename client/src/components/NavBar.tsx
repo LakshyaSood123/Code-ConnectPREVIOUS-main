@@ -7,7 +7,7 @@ export function NavBar() {
       <div className="container mx-auto px-4 h-full flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/brand-logo.png" 
+            src={`${import.meta.env.BASE_URL}brand-logo.png`} 
             alt="Reagvis Labs Pvt. Ltd." 
             className="h-[34px] md:h-[40px] max-w-[280px] object-contain block" 
           />
