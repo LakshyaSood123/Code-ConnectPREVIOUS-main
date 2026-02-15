@@ -7,8 +7,6 @@ import { useAnalysisSimulation } from '@/hooks/use-analysis-simulation';
 import { ToolType } from '@shared/schema';
 import { 
   FileText, 
-  Search, 
-  AlertOctagon, 
   Globe, 
   Download,
   Loader2
@@ -18,8 +16,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const TABS: { id: ToolType; label: string; icon: any }[] = [
   { id: 'document', label: 'Document', icon: FileText },
-  { id: 'fact-check', label: 'Fact Check', icon: Search },
-  { id: 'propaganda', label: 'Propaganda', icon: AlertOctagon },
   { id: 'verification', label: 'Verification', icon: Globe },
 ];
 
