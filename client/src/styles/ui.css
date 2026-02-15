@@ -169,7 +169,7 @@
   background: rgba(59, 130, 246, 0.05);
 }
 
-/* Compact dropzone variant for Fact Check */
+/* Compact dropzone variant */
 .file-drop-area.compact {
   padding: 8px 12px;
   display: flex;

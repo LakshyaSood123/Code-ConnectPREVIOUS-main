@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { UploadCloud, Search, AlertOctagon, FileText, Globe } from 'lucide-react';
+import { UploadCloud, FileText, Globe } from 'lucide-react';
 import { ToolType } from '@shared/schema';
 
 interface MainCardProps {
@@ -98,8 +98,6 @@ export function MainCard({ activeTool, onAnalyze, isAnalyzing }: MainCardProps) 
   const getToolInfo = () => {
     switch (activeTool) {
       case 'document': return { title: "Document Forensics", icon: FileText, desc: "Analyze documents for digital alteration and manipulation." };
-      case 'fact-check': return { title: "Automated Fact Check", icon: Search, desc: "Verify claims against a database of trusted sources." };
-      case 'propaganda': return { title: "Propaganda Detection", icon: AlertOctagon, desc: "Identify persuasive techniques and bias in text." };
       case 'verification': return { title: "Verification Suite", icon: Globe, desc: "Combined metadata extraction and geolocation analysis." };
     }
   };
